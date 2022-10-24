@@ -58,6 +58,7 @@ def my_form_post():
 
     #Converting string to list
     data_list = json.loads(data)
+    print(data_list)
 
     #taking the key to store
     key = str(data_list[0])

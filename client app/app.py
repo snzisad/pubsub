@@ -60,10 +60,11 @@ def postData():
     data = request.form['data']
     print("Sending Data ...")
     response, id = encoder.send(host + '/pub', data)
-
-        # Open a file with access mode 'a'
-    with open("./templates/ids.txt", "a") as file_object:
-        file_object.write(str(id) + '\n')
+    
+    if len(id)>0:
+            # Open a file with access mode 'a'
+        with open("./templates/ids.txt", "a") as file_object:
+            file_object.write(str(id) + '\n')
 
 
     return str(id)

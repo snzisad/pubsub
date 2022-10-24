@@ -1,0 +1,25 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+.center-item {
+    width: 100%;
+    text-align: center;
+}
+.container {
+    max-width: 70%;
+    margin: auto;
+}
+
+.modal{
+    color: #000;
+}
+
+.btn-fab{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    right: 40px;
+    bottom: 50px;
+    position: fixed;
+}
